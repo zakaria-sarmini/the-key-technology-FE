@@ -91,6 +91,7 @@ class AppView extends AppController {
 										</Button>
 
 										<Button
+											id={`word-count-button-${post.id}`}
 											variant="contained"
 											onClick={() => this.openWordCount(post.wordCount)}
 										>

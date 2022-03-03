@@ -6,6 +6,8 @@ export default abstract class AppController extends React.PureComponent<IAppProp
 	protected socketController: SocketController<IPost> | undefined;
 	protected currentWordCount: Record<string, number> = {};
 
+	abstract componentDidMount(): void;
+
 	constructor(props: IAppProps) {
 		super(props);
 
